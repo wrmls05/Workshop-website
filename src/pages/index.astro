@@ -12,27 +12,39 @@ import "../styles/global.css";
 		<title>Astro</title>
 	</head>
 	<body>
-		<section>
-			<div class="flex justify-center p-3 bg-black text-sm">
-				<p class="px-2 text-gray-400">
+		<section class="bg-black w-full">
+			<div
+				class="w-full flex justify-center items-center px-4 py-3 text-xs sm:text-sm"
+			>
+				<p class="text-gray-400 text-center">
 					Sign up and get 20% off to your first order.
+					<a href="#" class="text-white underline ml-1">
+						Sign up now
+					</a>
 				</p>
-				<p><a href="#" class="text-white underline">Sign up now</a></p>
 			</div>
 		</section>
 
 		<nav>
 			<div
-				class="container flex justify-center items-center px-20 my-5 mx-auto gap-7"
+				class="container flex justify-center items-center px-2 lg:px-20 my-5 mx-auto gap-7"
 			>
-				<div class="flex text-2xl font-bold pr-7">
+				<div class="flex pr-7">
 					<img src="https://placehold.co/180x60" alt="logo" />
 				</div>
-				<div class="flex gap-7">
-					<ul><a href="#">Shop</a></ul>
-					<ul><a href="#">On Sale</a></ul>
-					<ul><a href="#">New Arrivals</a></ul>
-					<ul><a href="#">Brands</a></ul>
+				<div class="hidden lg:flex gap-7 ">	
+					<ul>
+						<a class="hover:font-semibold" href="#">Shop</a>
+					</ul>
+					<ul>
+						<a class="hover:font-semibold" href="#">On Sale</a>
+					</ul>
+					<ul>
+						<a class="hover:font-semibold" href="#">New Arrivals</a>
+					</ul>
+					<ul>
+						<a class="hover:font-semibold" href="#">Brands</a>
+					</ul>
 				</div>
 
 				<div class="flex-1">
@@ -44,39 +56,43 @@ import "../styles/global.css";
 				</div>
 
 				<div class="flex">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="2em"
-						height="2em"
-						viewBox="0 0 24 24"
-					>
-						<path d="M0 0h24v24H0z" fill="none"></path>
-						<path
-							fill="currentColor"
-							d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"
-						></path>
-					</svg>
+					<a href="#">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="2em"
+							height="2em"
+							viewBox="0 0 24 24"
+						>
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path
+								fill="currentColor"
+								d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"
+							></path>
+						</svg>
+					</a>
 				</div>
 				<div class="flex">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="2em"
-						height="2em"
-						viewBox="0 0 640 640"
-					>
-						<path d="M0 0h640v640H0z" fill="none"></path>
-						<path
-							fill="currentColor"
-							d="M470.5 463.6c-19.1-46.7-65-79.6-118.5-79.6h-64c-53.5 0-99.4 32.9-118.5 79.6C133.9 426.3 112 375.7 112 320c0-114.9 93.1-208 208-208s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6m-40.1 32.7c-32 20.1-69.8 31.7-110.4 31.7s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3h64c38.8 0 71.2 27.6 78.5 64.3zM320 576c141.4 0 256-114.6 256-256S461.4 64 320 64S64 178.6 64 320s114.6 256 256 256m0-272c-22.1 0-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40s-17.9 40-40 40m-88-40c0 48.6 39.4 88 88 88s88-39.4 88-88s-39.4-88-88-88s-88 39.4-88 88"
-						></path>
-					</svg>
+					<a href="#">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="2em"
+							height="2em"
+							viewBox="0 0 640 640"
+						>
+							<path d="M0 0h640v640H0z" fill="none"></path>
+							<path
+								fill="currentColor"
+								d="M470.5 463.6c-19.1-46.7-65-79.6-118.5-79.6h-64c-53.5 0-99.4 32.9-118.5 79.6C133.9 426.3 112 375.7 112 320c0-114.9 93.1-208 208-208s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6m-40.1 32.7c-32 20.1-69.8 31.7-110.4 31.7s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3h64c38.8 0 71.2 27.6 78.5 64.3zM320 576c141.4 0 256-114.6 256-256S461.4 64 320 64S64 178.6 64 320s114.6 256 256 256m0-272c-22.1 0-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40s-17.9 40-40 40m-88-40c0 48.6 39.4 88 88 88s88-39.4 88-88s-39.4-88-88-88s-88 39.4-88 88"
+							></path>
+						</svg>
+					</a>
 				</div>
 			</div>
 		</nav>
 
-		<header>
-			<div class="flex bg-gray-100">
-				<div class="container px-20 py-20 mx-auto">
+		<header class="bg-gray-100">
+			<div class="flex-row lg:flex container mx-auto">
+				<div class=" px-20 py-20 mx-auto">
 					<h1 class="text-6xl font-bold">
 						FIND CLOTHES THAT MATCHES YOUR STYLE
 					</h1>
@@ -93,7 +109,7 @@ import "../styles/global.css";
 					</a>
 
 					<section>
-						<ul class="mt-10 flex divide-x-2 divide-gray-300">
+						<ul class="grid grid-cols-2 flex-row lg:flex mt-10 divide-x-2 divide-gray-300">
 							<li class="flex flex-col pr-8">
 								<strong class="text-4xl">200+</strong>
 								<small class="mt-2 text-gray-600">
@@ -126,46 +142,48 @@ import "../styles/global.css";
 
 		<section>
 			<div class="flex bg-black w-full py-6">
-				<div class="flex w-full justify-evenly items-center gap-5">
-					<img src="https://placehold.co/150x70" alt="logo" />
-					<img src="https://placehold.co/150x70" alt="logo" />
-					<img src="https://placehold.co/150x70" alt="logo" />
-					<img src="https://placehold.co/150x70" alt="logo" />
-					<img src="https://placehold.co/150x70" alt="logo" />
+				<div
+					class="grid grid-cols-3 flex-row lg:flex w-full justify-evenly items-center gap-5 container mx-auto"
+				>
+					<img class="w-11/12 lg:size-max" src="https://placehold.co/150x70" alt="logo" />
+					<img class="w-11/12 lg:size-max" src="https://placehold.co/150x70" alt="logo" />
+					<img class="w-11/12 lg:size-max" src="https://placehold.co/150x70" alt="logo" />
+					<img class="w-11/12 lg:size-max" src="https://placehold.co/150x70" alt="logo" />
+					<img class="w-11/12 lg:size-max" src="https://placehold.co/150x70" alt="logo" />
 				</div>
 			</div>
 		</section>
 
-		<header>
-			<div class="bg-gray-100 px-20 pt-20">
+		<header class="bg-gray-100">
+			<div class="container mx-auto px-5 pt-10 sm:px-20 sm:pt-20">
 				<div
-					class="container flex flex-col pb-20 mx-auto items-center border-b border-gray-300"
+					class="flex flex-col pb-20 mx-auto items-center border-b border-gray-300"
 				>
-					<h1 class="text-5xl font-bold text-center">NEW ARRIVALS</h1>
+					<h1 class="text-3xl font-bold text-center sm:text-5xl">NEW ARRIVALS</h1>
 					<div
-						class="flex w-full justify-evenly items-center text-lg gap-5 py-10 font-bold"
+						class="grid w-full grid-cols-2 gap-5 py-10 text-lg font-bold lg:flex lg:items-center lg:justify-evenly"
 					>
-						<div>
+						<div class="min-w-0">
 							<img
 								src="https://placehold.co/300x300"
 								alt="logo"
-								class="rounded-2xl"
+								class="w-full rounded-2xl"
 							/>
 							<p class="py-3">T-shirt With Tape Details</p>
-							<div class="flex items-center gap-3">
+							<div class="flex flex-wrap items-center gap-3">
 								<p class="text-2xl font-bold">$120</p>
 								<!-- <p class="text-2xl font-bold text-stone-400 line-through">$260</p> -->
 								<!-- <p class="bg-red-100 text-red-500 font-normal text-sm px-4 py-1 rounded-full">-20%</p> -->
 							</div>
 						</div>
-						<div>
+						<div class="min-w-0">
 							<img
 								src="https://placehold.co/300x300"
 								alt="logo"
-								class="rounded-2xl"
+								class="w-full rounded-2xl"
 							/>
 							<p class="py-3">Skinny Fit Jeans</p>
-							<div class="flex items-center gap-3">
+							<div class="flex flex-wrap items-center gap-3">
 								<p class="text-2xl font-bold">$240</p>
 								<p
 									class="text-2xl font-bold text-stone-400 line-through"
@@ -179,27 +197,27 @@ import "../styles/global.css";
 								</p>
 							</div>
 						</div>
-						<div>
+						<div class="min-w-0">
 							<img
 								src="https://placehold.co/300x300"
 								alt="logo"
-								class="rounded-2xl"
+								class="w-full rounded-2xl"
 							/>
 							<p class="py-3">Checkered Shirt</p>
-							<div class="flex items-center gap-3">
+							<div class="flex flex-wrap items-center gap-3">
 								<p class="text-2xl font-bold">$180</p>
 								<!-- <p class="text-2xl font-bold text-stone-400 line-through">$260</p> -->
 								<!-- <p class="bg-red-100 text-red-500 font-normal text-sm px-4 py-1 rounded-full">-20%</p> -->
 							</div>
 						</div>
-						<div>
+						<div class="min-w-0">
 							<img
 								src="https://placehold.co/300x300"
 								alt="logo"
-								class="rounded-2xl"
+								class="w-full rounded-2xl"
 							/>
 							<p class="py-3">Sleeve Striped T-Shirt</p>
-							<div class="flex items-center gap-3">
+							<div class="flex flex-wrap items-center gap-3">
 								<p class="text-2xl font-bold">$29.00</p>
 								<!-- <p class="text-2xl font-bold text-stone-400 line-through">$260</p> -->
 								<!-- <p class="bg-red-100 text-red-500 font-normal text-sm px-4 py-1 rounded-full">-20%</p> -->
@@ -219,36 +237,23 @@ import "../styles/global.css";
 				<div
 					class="container flex flex-col pt-20 pb-20 mx-auto items-center"
 				>
-					<h2 class="text-5xl font-bold text-center">TOP SELLING</h2>
+					<h2 class="text-3xl font-bold text-center sm:text-5xl">TOP SELLING</h2>
 					<div
-						class="flex w-full justify-evenly items-center text-lg gap-5 py-10 font-bold"
+						class="grid w-full grid-cols-2 gap-5 py-10 text-lg font-bold lg:flex lg:items-center lg:justify-evenly"
 					>
-						<div>
+						<div class="min-w-0">
 							<img
 								src="https://placehold.co/300x300"
 								alt="logo"
-								class="rounded-2xl"
+								class="w-full rounded-2xl"
 							/>
 							<p class="py-3">Vertical Striped shirt</p>
-							<div class="flex items-center gap-3">
-								<p class="text-2xl font-bold">$120</p>
-								<!-- <p class="text-2xl font-bold text-stone-400 line-through">$260</p> -->
-								<!-- <p class="bg-red-100 text-red-500 font-normal text-sm px-4 py-1 rounded-full">-20%</p> -->
-							</div>
-						</div>
-						<div>
-							<img
-								src="https://placehold.co/300x300"
-								alt="logo"
-								class="rounded-2xl"
-							/>
-							<p class="py-3">Courage Graphic T-shirt</p>
-							<div class="flex items-center gap-3">
-								<p class="text-2xl font-bold">$240</p>
+							<div class="flex flex-wrap items-center gap-3">
+								<p class="text-2xl font-bold">$212</p>
 								<p
 									class="text-2xl font-bold text-stone-400 line-through"
 								>
-									$260
+									$323
 								</p>
 								<p
 									class="bg-red-100 text-red-500 font-normal text-sm px-4 py-1 rounded-full"
@@ -257,28 +262,41 @@ import "../styles/global.css";
 								</p>
 							</div>
 						</div>
-						<div>
+						<div class="min-w-0">
 							<img
 								src="https://placehold.co/300x300"
 								alt="logo"
-								class="rounded-2xl"
+								class="w-full rounded-2xl"
 							/>
-							<p class="py-3">Loose Fit Bermuda Shorts</p>
-							<div class="flex items-center gap-3">
-								<p class="text-2xl font-bold">$180</p>
+							<p class="py-3">Courage Graphic T-shirt</p>
+							<div class="flex flex-wrap items-center gap-3">
+								<p class="text-2xl font-bold">$145</p>
 								<!-- <p class="text-2xl font-bold text-stone-400 line-through">$260</p> -->
 								<!-- <p class="bg-red-100 text-red-500 font-normal text-sm px-4 py-1 rounded-full">-20%</p> -->
 							</div>
 						</div>
-						<div>
+						<div class="min-w-0">
 							<img
 								src="https://placehold.co/300x300"
 								alt="logo"
-								class="rounded-2xl"
+								class="w-full rounded-2xl"
+							/>
+							<p class="py-3">Loose Fit Bermuda Shorts</p>
+							<div class="flex flex-wrap items-center gap-3">
+								<p class="text-2xl font-bold">$80</p>
+								<!-- <p class="text-2xl font-bold text-stone-400 line-through">$260</p> -->
+								<!-- <p class="bg-red-100 text-red-500 font-normal text-sm px-4 py-1 rounded-full">-20%</p> -->
+							</div>
+						</div>
+						<div class="min-w-0">
+							<img
+								src="https://placehold.co/300x300"
+								alt="logo"
+								class="w-full rounded-2xl"
 							/>
 							<p class="py-3">Faded Skinny Jeans</p>
-							<div class="flex items-center gap-3">
-								<p class="text-2xl font-bold">$29.00</p>
+							<div class="flex flex-wrap items-center gap-3">
+								<p class="text-2xl font-bold">$210</p>
 								<!-- <p class="text-2xl font-bold text-stone-400 line-through">$260</p> -->
 								<!-- <p class="bg-red-100 text-red-500 font-normal text-sm px-4 py-1 rounded-full">-20%</p> -->
 							</div>
@@ -293,41 +311,43 @@ import "../styles/global.css";
 						</a>
 					</div>
 				</div>
-				<div class="bg-stone-200 pt-20 px-20 rounded-4xl">
-					<h1 class="text-5xl font-bold text-center">
+				<div
+					class="container mx-auto flex flex-col rounded-4xl bg-stone-200 px-5 pt-10 sm:px-20 sm:pt-20"
+				>
+					<h1 class="text-3xl font-bold text-center sm:text-5xl">
 						BROWSE BY DRESS STYLE
 					</h1>
 					<ul
-						class="grid grid-cols-8 gap-10 py-10 text-3xl font-bold"
+						class="grid grid-cols-1 gap-4 py-10 text-2xl font-bold sm:grid-cols-8 sm:gap-10 sm:text-3xl"
 					>
-						<li class="col-span-3">
+						<li class="col-span-1 sm:col-span-3">
 							<a
 								href="#"
-								class="bg-white h-56 block rounded-2xl p-10 bg-no-repeat bg-right"
+								class="block h-56 rounded-2xl bg-white bg-right bg-no-repeat p-6 sm:p-10"
 								style="background-image: url(https://placehold.co/300x300);"
 								>Casual</a
 							>
 						</li>
-						<li class="col-span-5">
+						<li class="col-span-1 sm:col-span-5">
 							<a
 								href="#"
-								class="bg-white h-56 block rounded-2xl p-10 bg-no-repeat bg-right"
+								class="block h-56 rounded-2xl bg-white bg-right bg-no-repeat p-6 sm:p-10"
 								style="background-image: url(https://placehold.co/300x300);"
 								>Formal</a
 							>
 						</li>
-						<li class="col-span-5">
+						<li class="col-span-1 sm:col-span-5">
 							<a
 								href="#"
-								class="bg-white h-56 block rounded-2xl p-10 bg-no-repeat bg-right"
+								class="block h-56 rounded-2xl bg-white bg-right bg-no-repeat p-6 sm:p-10"
 								style="background-image: url(https://placehold.co/300x300);"
 								>Party</a
 							>
 						</li>
-						<li class="col-span-3">
+						<li class="col-span-1 sm:col-span-3">
 							<a
 								href="#"
-								class="bg-white h-56 block rounded-2xl p-10 bg-no-repeat bg-right"
+								class="block h-56 rounded-2xl bg-white bg-right bg-no-repeat p-6 sm:p-10"
 								style="background-image: url(https://placehold.co/300x300);"
 								>Gym</a
 							>
@@ -335,8 +355,8 @@ import "../styles/global.css";
 					</ul>
 				</div>
 
-				<div class="flex justify-between mt-20 items-center">
-					<h3 class="font-bold text-4xl">OUR HAPPY CUSTOMERS</h3>
+				<div class="mt-20 flex items-center justify-between gap-4">
+					<h3 class="text-3xl font-bold sm:text-4xl">OUR HAPPY CUSTOMERS</h3>
 					<p class="flex text-xl gap-3 items-center">
 						<svg
 							class="hover:cursor-pointer"
@@ -376,8 +396,8 @@ import "../styles/global.css";
 					</p>
 				</div>
 
-				<div class="flex mt-15 gap-10">
-					<div class="py-7 px-10 border border-gray-300 rounded-2xl">
+				<div class="mt-15 flex gap-10">
+					<div class="flex min-w-0 flex-col rounded-2xl border border-gray-300 px-5 py-7 sm:px-10">
 						<span class="flex text-yellow-400 text-3xl pb-3"
 							>{
 								Array.from({ length: 5 }, () => (
@@ -423,7 +443,7 @@ import "../styles/global.css";
 							exceeded my expectations.”
 						</p>
 					</div>
-					<div class="py-7 px-10 border border-gray-300 rounded-2xl">
+					<div class="hidden lg:flex flex-col py-7 px-10 border border-gray-300 rounded-2xl">
 						<span class="flex text-yellow-400 text-3xl pb-3"
 							>{
 								Array.from({ length: 5 }, () => (
@@ -468,7 +488,7 @@ import "../styles/global.css";
 							special occasion and delivered it quickly.”
 						</p>
 					</div>
-					<div class="py-7 px-10 border border-gray-300 rounded-2xl">
+					<div class="hidden lg:flex flex-col py-7 px-10 border border-gray-300 rounded-2xl">
 						<span class="flex text-yellow-400 text-3xl pb-3"
 							>{
 								Array.from({ length: 5 }, () => (
@@ -515,27 +535,27 @@ import "../styles/global.css";
 					</div>
 				</div>
 
-				<section>
-					<div
-						class="container mx-auto mt-20 bg-black rounded-3xl"
-					>
+				<section class="translate-y-1/2">
+					<div class="container mx-auto bg-black rounded-3xl">
 						<div
-							class="flex flex-col md:flex-row items-center justify-between gap-8 py-10 px-20 text-center md:text-left"
+							class="flex flex-col items-center justify-between gap-8 px-5 py-10 text-center sm:px-10 md:flex-row md:px-20 md:text-left"
 						>
-							<h1 class="text-white font-bold text-3xl md:text-5xl">
+							<h1
+								class="text-white font-bold text-3xl md:text-5xl"
+							>
 								STAY UPTO DATE ABOUT <br /> OUR LATEST OFFERS
 							</h1>
 
 							<form class="w-full max-w-xl">
 								<input
 									type="email"
-									placeholder="Your email address"
+									placeholder="Enter your email address"
 									class="text-center w-full rounded-full bg-white text-black placeholder:text-gray-500 border border-gray-600 py-3 px-4 mb-3"
 								/>
 								<button
 									class="w-full rounded-full bg-white text-black font-bold py-3 px-4 hover:bg-gray-200"
 								>
-									Subscribe
+									Subscribe to Newsletter
 								</button>
 							</form>
 						</div>
@@ -544,10 +564,10 @@ import "../styles/global.css";
 			</div>
 		</header>
 
-		<footer class="bg-neutral-200">
-			<div class="container mx-auto py-10 text-gray-500">
+		<footer class="bg-neutral-200 pt-40">
+			<div class="container mx-auto py-10 text-gray-500 px-20">
 				<div
-					class="flex items-center justify-between gap-10 border-b border-gray-300 pb-10"
+					class="flex-col flex lg:flex-row items-center justify-between gap-10 border-b border-gray-300 pb-10"
 				>
 					<div class="w-70 flex flex-col items-start gap-10">
 						<img
@@ -562,7 +582,7 @@ import "../styles/global.css";
 						<div class="flex items-center gap-3">
 							<a href="#"
 								><svg
-								class="text-3xl"
+									class="text-3xl"
 									xmlns="http://www.w3.org/2000/svg"
 									width="1em"
 									height="1em"
@@ -622,37 +642,53 @@ import "../styles/global.css";
 							</a>
 						</div>
 					</div>
-					<div class="flex flex-col gap-7">
-						<h1 class="text-black pb-5">COMPANY</h1>
-						<a href="">About Us</a>
-						<a href="">Careers</a>
-						<a href="">Contact</a>
-						<a href="">Blog</a>
+					<div class="flex flex-col justify-center items-center gap-7">
+						<h1 class="text-black pb-5 font-bold">COMPANY</h1>
+						<a class="hover:font-semibold" href="#">About Us</a>
+						<a class="hover:font-semibold" href="#">Careers</a>
+						<a class="hover:font-semibold" href="#">Contact</a>
+						<a class="hover:font-semibold" href="#">Blog</a>
 					</div>
-					<div class="flex flex-col gap-7">
-						<h1 class="text-black pb-5">HELP</h1>
-						<a href="">Help Center</a>
-						<a href="">Shipping Information</a>
-						<a href="">Returns & Exchanges</a>
-						<a href="">Terms & Conditions</a>
+					<div class="flex flex-col justify-center items-center gap-7">
+						<h1 class="text-black pb-5 font-bold">HELP</h1>
+						<a class="hover:font-semibold" href="#">Help Center</a>
+						<a class="hover:font-semibold" href="#"
+							>Shipping Information</a
+						>
+						<a class="hover:font-semibold" href="#"
+							>Returns & Exchanges</a
+						>
+						<a class="hover:font-semibold" href="#"
+							>Terms & Conditions</a
+						>
 					</div>
-					<div class="flex flex-col gap-7">
-						<h1 class="text-black pb-5">FAQ</h1>
-						<a href="">Frequently Asked Questions</a>
-						<a href="">Size Guide</a>
-						<a href="">Payment Options</a>
-						<a href="">Account Settings</a>
+					<div class="flex flex-col justify-center items-center gap-7">
+						<h1 class="text-black pb-5 font-bold">FAQ</h1>
+						<a class="hover:font-semibold" href="#"
+							>Frequently Asked Questions</a
+						>
+						<a class="hover:font-semibold" href="#">Size Guide</a>
+						<a class="hover:font-semibold" href="#"
+							>Payment Options</a
+						>
+						<a class="hover:font-semibold" href="#"
+							>Account Settings</a
+						>
 					</div>
-					<div class="flex flex-col gap-7">
-						<h1 class="text-black pb-5">RESOURCES</h1>
-						<a href="">Style Guide</a>
-						<a href="">Sustainability</a>
-						<a href="">Press</a>
-						<a href="">Developer Tutorial</a>
+					<div class="flex flex-col justify-center items-center gap-7">
+						<h1 class="text-black pb-5 font-bold">RESOURCES</h1>
+						<a class="hover:font-semibold" href="#">Style Guide</a>
+						<a class="hover:font-semibold" href="#"
+							>Sustainability</a
+						>
+						<a class="hover:font-semibold" href="#">Press</a>
+						<a class="hover:font-semibold" href="#"
+							>Developer Tutorial</a
+						>
 					</div>
 				</div>
 			</div>
-			<div class="flex px-20 pb-20">
+			<div class="flex pb-10 pl-20 container mx-auto">
 				<p class="text-gray-500">
 					Shop.co. &copy; 2000-2023, All rights reserved.
 				</p>
