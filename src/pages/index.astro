@@ -11,6 +11,7 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
+	
 	<body>
 		<section class="bg-black w-full">
 			<div
@@ -32,7 +33,7 @@ import "../styles/global.css";
 				<div class="flex pr-7">
 					<img src="https://placehold.co/180x60" alt="logo" />
 				</div>
-				<div class="hidden lg:flex gap-7 ">	
+				<div class="hidden lg:flex gap-7">
 					<ul>
 						<a class="hover:font-semibold" href="#">Shop</a>
 					</ul>
@@ -92,7 +93,7 @@ import "../styles/global.css";
 
 		<header class="bg-gray-100">
 			<div class="flex-row lg:flex container mx-auto">
-				<div class=" px-20 py-20 mx-auto">
+				<div class="px-20 py-20 mx-auto">
 					<h1 class="text-6xl font-bold">
 						FIND CLOTHES THAT MATCHES YOUR STYLE
 					</h1>
@@ -109,7 +110,9 @@ import "../styles/global.css";
 					</a>
 
 					<section>
-						<ul class="grid grid-cols-2 flex-row lg:flex mt-10 divide-x-2 divide-gray-300">
+						<ul
+							class="grid grid-cols-2 flex-row lg:flex mt-10 divide-x-2 divide-gray-300"
+						>
 							<li class="flex flex-col pr-8">
 								<strong class="text-4xl">200+</strong>
 								<small class="mt-2 text-gray-600">
@@ -145,11 +148,31 @@ import "../styles/global.css";
 				<div
 					class="grid grid-cols-3 flex-row lg:flex w-full justify-evenly items-center gap-5 container mx-auto"
 				>
-					<img class="w-11/12 lg:size-max" src="https://placehold.co/150x70" alt="logo" />
-					<img class="w-11/12 lg:size-max" src="https://placehold.co/150x70" alt="logo" />
-					<img class="w-11/12 lg:size-max" src="https://placehold.co/150x70" alt="logo" />
-					<img class="w-11/12 lg:size-max" src="https://placehold.co/150x70" alt="logo" />
-					<img class="w-11/12 lg:size-max" src="https://placehold.co/150x70" alt="logo" />
+					<img
+						class="w-11/12 lg:size-max"
+						src="https://placehold.co/150x70"
+						alt="logo"
+					/>
+					<img
+						class="w-11/12 lg:size-max"
+						src="https://placehold.co/150x70"
+						alt="logo"
+					/>
+					<img
+						class="w-11/12 lg:size-max"
+						src="https://placehold.co/150x70"
+						alt="logo"
+					/>
+					<img
+						class="w-11/12 lg:size-max"
+						src="https://placehold.co/150x70"
+						alt="logo"
+					/>
+					<img
+						class="w-11/12 lg:size-max"
+						src="https://placehold.co/150x70"
+						alt="logo"
+					/>
 				</div>
 			</div>
 		</section>
@@ -159,7 +182,9 @@ import "../styles/global.css";
 				<div
 					class="flex flex-col pb-20 mx-auto items-center border-b border-gray-300"
 				>
-					<h1 class="text-3xl font-bold text-center sm:text-5xl">NEW ARRIVALS</h1>
+					<h1 class="text-3xl font-bold text-center sm:text-5xl">
+						NEW ARRIVALS
+					</h1>
 					<div
 						class="grid w-full grid-cols-2 gap-5 py-10 text-lg font-bold lg:flex lg:items-center lg:justify-evenly"
 					>
@@ -237,7 +262,9 @@ import "../styles/global.css";
 				<div
 					class="container flex flex-col pt-20 pb-20 mx-auto items-center"
 				>
-					<h2 class="text-3xl font-bold text-center sm:text-5xl">TOP SELLING</h2>
+					<h2 class="text-3xl font-bold text-center sm:text-5xl">
+						TOP SELLING
+					</h2>
 					<div
 						class="grid w-full grid-cols-2 gap-5 py-10 text-lg font-bold lg:flex lg:items-center lg:justify-evenly"
 					>
@@ -356,7 +383,9 @@ import "../styles/global.css";
 				</div>
 
 				<div class="mt-20 flex items-center justify-between gap-4">
-					<h3 class="text-3xl font-bold sm:text-4xl">OUR HAPPY CUSTOMERS</h3>
+					<h3 class="text-3xl font-bold sm:text-4xl">
+						OUR HAPPY CUSTOMERS
+					</h3>
 					<p class="flex text-xl gap-3 items-center">
 						<svg
 							class="hover:cursor-pointer"
@@ -397,7 +426,9 @@ import "../styles/global.css";
 				</div>
 
 				<div class="mt-15 flex gap-10">
-					<div class="flex min-w-0 flex-col rounded-2xl border border-gray-300 px-5 py-7 sm:px-10">
+					<div
+						class="flex min-w-0 flex-col rounded-2xl border border-gray-300 px-5 py-7 sm:px-10"
+					>
 						<span class="flex text-yellow-400 text-3xl pb-3"
 							>{
 								Array.from({ length: 5 }, () => (
@@ -443,7 +474,9 @@ import "../styles/global.css";
 							exceeded my expectations.”
 						</p>
 					</div>
-					<div class="hidden lg:flex flex-col py-7 px-10 border border-gray-300 rounded-2xl">
+					<div
+						class="hidden lg:flex flex-col py-7 px-10 border border-gray-300 rounded-2xl"
+					>
 						<span class="flex text-yellow-400 text-3xl pb-3"
 							>{
 								Array.from({ length: 5 }, () => (
@@ -488,7 +521,9 @@ import "../styles/global.css";
 							special occasion and delivered it quickly.”
 						</p>
 					</div>
-					<div class="hidden lg:flex flex-col py-7 px-10 border border-gray-300 rounded-2xl">
+					<div
+						class="hidden lg:flex flex-col py-7 px-10 border border-gray-300 rounded-2xl"
+					>
 						<span class="flex text-yellow-400 text-3xl pb-3"
 							>{
 								Array.from({ length: 5 }, () => (
@@ -642,14 +677,18 @@ import "../styles/global.css";
 							</a>
 						</div>
 					</div>
-					<div class="flex flex-col justify-center items-center gap-7">
+					<div
+						class="flex flex-col justify-center items-center gap-7"
+					>
 						<h1 class="text-black pb-5 font-bold">COMPANY</h1>
 						<a class="hover:font-semibold" href="#">About Us</a>
 						<a class="hover:font-semibold" href="#">Careers</a>
 						<a class="hover:font-semibold" href="#">Contact</a>
 						<a class="hover:font-semibold" href="#">Blog</a>
 					</div>
-					<div class="flex flex-col justify-center items-center gap-7">
+					<div
+						class="flex flex-col justify-center items-center gap-7"
+					>
 						<h1 class="text-black pb-5 font-bold">HELP</h1>
 						<a class="hover:font-semibold" href="#">Help Center</a>
 						<a class="hover:font-semibold" href="#"
@@ -662,7 +701,9 @@ import "../styles/global.css";
 							>Terms & Conditions</a
 						>
 					</div>
-					<div class="flex flex-col justify-center items-center gap-7">
+					<div
+						class="flex flex-col justify-center items-center gap-7"
+					>
 						<h1 class="text-black pb-5 font-bold">FAQ</h1>
 						<a class="hover:font-semibold" href="#"
 							>Frequently Asked Questions</a
@@ -675,7 +716,9 @@ import "../styles/global.css";
 							>Account Settings</a
 						>
 					</div>
-					<div class="flex flex-col justify-center items-center gap-7">
+					<div
+						class="flex flex-col justify-center items-center gap-7"
+					>
 						<h1 class="text-black pb-5 font-bold">RESOURCES</h1>
 						<a class="hover:font-semibold" href="#">Style Guide</a>
 						<a class="hover:font-semibold" href="#"
